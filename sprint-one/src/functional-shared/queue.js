@@ -7,13 +7,13 @@ var Queue = function() {
     min : 0,
     max : 0
   };
-  jQuery.extend(instance, Queue.queueMethods);
+  jQuery.extend(instance, queueMethods);
   return instance;
 
 };
 
 
-Queue.queueMethods = {
+var queueMethods = {
 
   enqueue: function(value){
 
